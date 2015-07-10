@@ -2,3 +2,4 @@
 *.log
 /dist
 /demo_dist
+.DS_Store

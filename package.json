@@ -1,6 +1,6 @@
 {
   "name": "react-tour",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React component that help you create nice step-by-step intros.",
   "main": "dist/index.js",
   "scripts": {

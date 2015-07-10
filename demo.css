@@ -1,0 +1,73 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.618;
+  font-size: 15px;
+  padding: 5em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.step {
+  display: inline-block;
+  padding: 5em;
+  max-width: 20em;
+}
+.step h2 {
+  text-align: center;
+  padding: 0 0 .5em;
+  margin: 0;
+  line-height: 1;
+}
+.step1 {
+  margin: 0 10em 0 0;
+}
+.step2 {
+  margin: 0 0 0 10em;
+}
+.step3 {
+  margin: 0 10em 0 0;
+}
+.react-tour {
+  -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+}
+.react-tour-hide {
+  opacity: 0;
+}
+.react-tour-focus {
+  position: fixed;
+  top: 25vh;
+  left: 25vw;
+  height: 50vw;
+  width: 50vh;
+  border-radius: 50%;
+  box-shadow: 0 0 0 200vmax rgba(128, 128, 128, 0.5);
+  -webkit-transition: height .3s, width .3s, top .3s, left .3s;
+          transition: height .3s, width .3s, top .3s, left .3s;
+  z-index: 1000;
+}
+.react-tour-focus-text {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 1em;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.17) 0 1px 0, rgba(0, 0, 0, 0.17) 0 1px 8px;
+}
+.react-tour-dots {
+  text-align: center;
+}
+.react-tour-dots-single {
+  height: .25em;
+  width: .25em;
+  display: inline-block;
+  border-radius: .25em;
+  border: 1px solid #fff;
+  margin: 0 .25em;
+}
+.react-tour-dots-single.active {
+  background: #fff;
+}

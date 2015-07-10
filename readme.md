@@ -6,7 +6,15 @@ React component that help you create nice step-by-step intros.
 
 [Live demo](http://javierbyte.github.io/react-tour/)
 
+# Installation
+
+  npm install react-tour --save
+
 # Usage
+
+    var ReactTour = require('react-tour');
+
+    // [...]
 
     var ReactTourConfig = [{
       node: React.findDOMNode(this.refs.step1),

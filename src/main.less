@@ -1,0 +1,46 @@
+.react-tour {
+  &-hide {
+    opacity: 0;
+  }
+
+  transition: opacity .3s;
+
+  &-focus {
+    position: fixed;
+    top: 25vh;
+    left: 25vw;
+    height: 50vw;
+    width: 50vh;
+    border-radius: 50%;
+    box-shadow: 0 0 0 200vmax rgba(128,128,128,.5);
+    transition: height .3s, width .3s, top .3s, left .3s;
+    z-index: 1000;
+
+    &-text {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      padding: 1em;
+      color: #fff;
+      text-shadow: rgba(0,0,0,.17) 0 1px 0, rgba(0,0,0,.17) 0 1px 8px;
+    }
+  }
+
+  &-dots {
+    text-align: center;
+    &-single {
+      height: .25em;
+      width: .25em;
+      display: inline-block;
+      border-radius: .25em;
+      border:1px solid #fff;
+      margin: 0 .25em;
+
+      &.active {
+        background: #fff;
+      }
+    }
+  }
+}

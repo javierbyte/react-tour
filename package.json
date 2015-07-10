@@ -1,11 +1,11 @@
 {
   "name": "react-tour",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React component that help you create nice step-by-step intros.",
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "mkdir -p dist && babel src/index.jsx -u -o dist/index.js --stage 1 && lessc src/main.less dist/style.css",
-    "pushpages": "git add demo_dist -f && git commit -m "Initial demo_dist subtree commit" && git subtree push --prefix demo_dist origin gh-pages",
+    "pushpages": "grunt build && git add demo_dist -f && git commit -m 'Updating gh-pages' && git subtree push --prefix demo_dist origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

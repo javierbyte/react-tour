@@ -2,9 +2,8 @@
 
 React component that help you create nice step-by-step intros.
 
-[Live demo](http://javierbyte.github.io/react-tour/)
-
 [![react-tour](/assets/react-tour.gif)](http://javierbyte.github.io/react-tour/)
+[Live demo](http://javierbyte.github.io/react-tour/)
 
 # Usage
 

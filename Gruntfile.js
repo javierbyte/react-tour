@@ -7,7 +7,7 @@ module.exports = function gruntFile(grunt) {
         stderr: false
       },
       clear: {
-        command: 'clear && mkdir -p demo_dist'
+        command: 'clear && mkdir -p demo_dist && cp index.html demo_dist/index.html'
       },
       reactify: {
         command: 'browserify -d -e demo_src/demo.jsx -t [ babelify --stage 0 ] -o demo_dist/demo.js'

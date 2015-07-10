@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "mkdir -p dist && babel src/index.jsx -u -o dist/index.js --stage 1 && lessc src/main.less dist/style.css",
+    "pushpages": "git add demo_dist -f && git commit -m "Initial demo_dist subtree commit" && git subtree push --prefix demo_dist origin gh-pages",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

@@ -18,10 +18,12 @@ React component that help you create nice step-by-step intros.
     // [...]
 
     <ReactTour config={ReactTourConfig}
-      currentStep={currentStep}
-      onNextStep={this.onNextTourStep}/>
+      currentStep={<integer>}
+      visible={<bool>}
+      showDots={<bool>} />
 
 # Props
+* `config`: An array that contain the steps of the tour. Each step can have a `node` and `text` properties that contains the dom node to focus and the help text to display.
 * `currentStep`: Integer or null.
-* `config`: The react tour config object.
-* `onNextStep`: Function.
+* `showDots`: Bool. Show progress dots?
+* `visible`: Bool. Is the component visible?

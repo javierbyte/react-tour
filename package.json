@@ -1,0 +1,24 @@
+{
+  "name": "react-tour",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "mkdir -p dist && babel src/index.jsx -u -o dist/index.js --stage 1 && lessc src/main.less dist/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/javierbyte/react-tour"
+  },
+  "author": "javierbyte",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^3.1.20",
+    "eslint": "^0.24.0",
+    "eslint-plugin-babel": "^1.0.0",
+    "eslint-plugin-react": "^2.6.4"
+  }
+}

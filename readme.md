@@ -17,10 +17,15 @@ React component that help you create nice step-by-step intros.
 
     // [...]
 
-    <ReactTour config={ReactTourConfig}
+    <ReactTour
+      config={ReactTourConfig}
       currentStep={<integer>}
       visible={<bool>}
       showDots={<bool>} />
+
+### Don't forget to add styles!
+
+    @import url(node_modules/react-tour/dist/style.css);
 
 # Props
 * `config`: An array that contain the steps of the tour. Each step can have a `node` and `text` properties that contains the dom node to focus and the help text to display.

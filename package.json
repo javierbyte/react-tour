@@ -1,7 +1,7 @@
 {
   "name": "react-tour",
   "version": "0.0.1",
-  "description": "",
+  "description": "React component that help you create nice step-by-step intros.",
   "main": "dist/index.js",
   "scripts": {
     "prepublish": "mkdir -p dist && babel src/index.jsx -u -o dist/index.js --stage 1 && lessc src/main.less dist/style.css",
